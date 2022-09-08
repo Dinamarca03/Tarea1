@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="Index.html" class="nav-link px-2 text-secondary">Inicio</a></li>
+              
+            </ul>
+        
+            <div class="text-end">
+              <a href="Inicio de Sesión.html"><button type="button" class="btn btn-outline-light me-2">Inicio de sesión</button></a>
+              <a href="Formulario1.html"><button type="button" class="btn btn-warning">Formulario</button></a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </header>
+
+      <br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="container">
+        <div class="card">
+            <h1><center>Ingresar usuarios</center></h1>
+            <div class="container">
+                <form class="row g-3 needs-validation" novalidate>
+        
+                    <div class="col-6">
+                        <label for="nameId" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="nameId" required>
+        
+    
+                        <div class="valid-feedback">
+                            Correo ingresado
+                        </div>
+                        <div class="invalid-feedback">
+                            Es necesario ingresar correo valido
+                        </div>
+                    </div>
+        
+        
+              
+                    <div class="col-6">
+                        <label for="surnameId" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="surnameId" required>
+        
+                        <div class="valid-feedback">
+                            Contraseña ingresada
+                        </div>
+                        <div class="invalid-feedback">
+                            Es necesario ingresar Contraseña
+                        </div>
+                    </div>
+                   
+                    
+        
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+        
+                </form>
+            </div>
+        
+            <script>
+              
+                (() => {
+                    'use strict'
+        
+                   
+                    const forms = document.querySelectorAll('.needs-validation')
+        
+                    
+                    Array.from(forms).forEach(form => {
+                        form.addEventListener('submit', event => {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+        
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+                })()
+            </script>        
+        </div>
+    </div>
+
+      
+      
+
+   
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="Index.html" class="nav-link px-2 text-secondary">Inicio</a></li>
+              
+            </ul>
+        
+            <div class="text-end">
+                <a href="Inicio de Sesión.html"><button type="button" class="btn btn-outline-light me-2">Inicio de sesión</button></a>
+                <a href="Formulario1.html"><button type="button" class="btn btn-warning">Formulario</button></a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </header>
+      <hr><hr><hr><hr><hr><hr>
+      <form action="">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="card text-center"style="border: solid ;min-height: 250px;"> <h2>Formulario</h2>
+                <fieldset>
+                  <div>
+                    <label for="nombre">Ingrese Nombre</label>
+                    <input type="text" name="nombre" id="nombreid" required>
+                  </div>
+                  <div>
+                    <label for="apellido">Ingrese Apellido</label>
+                    <input type="text" name="apellido" id="apellido" required>
+                  </div>
+                  <div>
+                    <label for="numero1">Ingrese numero 1</label>
+                    <input type="text" name="numero1" id="numero1">
+                  </div>
+                  <div>
+                    <label for="numero2">Ingrese numero 2</label>
+                    <input type="text" name="numero2" id="numero2">
+                  </div>
+                  <div>
+                    <label for="Contraseña1">Ingrese contraseña</label>
+                    <input type="password" name="contraseña1" id="contraseña1">
+                  </div>
+                  <div>
+                    <label for="Contraseña2">Ingrese contraseña</label>
+                    <input type="password" name="contraseña2" id="contraseña2">
+                  </div>
+                  <button onclick="">boton para mandar datos a js</button>
+                </fieldset>
+              </div>
+            </div>
+            <div class="col-6" >
+              <div class="card text-center "style="border: solid ;min-height: 250px;" > 
+                <h2>Ingrese al menos 3 numeros</h2>
+                <fieldset>
+                  <div>
+                    <input type="checkbox" name="opcion1" value="A"> Opcion 1
+                  </div>
+                  <div>
+                    <input type="checkbox" name="opcion1" value="B"> Opcion 2
+                  </div>
+                  <div>
+                    <input type="checkbox" name="opcion1" value="C"> Opcion 3
+                  </div>
+                  <div>
+                    <input type="checkbox" name="opcion1" value="D"> Opcion 4
+                  </div>
+                  <div>
+                    <input type="checkbox" name="opcion1" value="E"> Opcion 5
+                  </div>
+                  <div>
+                    <input type="checkbox" name="opcion1" value="F"> Opcion 6
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row"><button onclick="" type="submit" class="btn btn-primary" style="border: solid black;" >Enviar</button></div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="card"style="border: solid ;min-height: 250px;">
+                pruebas de datos mostrados desde js
+                <script src="Js/Formulario.js"></script>
+                
+            </div>
+          </div>
+        </div>
+      </form>
+      
+
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
